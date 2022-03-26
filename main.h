@@ -11,3 +11,4 @@
 using namespace std;
 
 void test_46();
+void test_47();

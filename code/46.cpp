@@ -49,4 +49,5 @@ void test_46() {
         }
         cout << "], ";
     }
+    cout << endl;
 }

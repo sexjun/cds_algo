@@ -12,5 +12,6 @@ int main(int argc, char const *argv[])
     say_hello();
     // 123全排列问题
     test_46();
+    test_47();
     return 0;
 }
