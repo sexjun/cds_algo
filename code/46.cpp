@@ -39,7 +39,7 @@ vector<vector<int> > permute(std::vector<int> array) {
 }
 
 void test_46() {
-    std::cout << "46:全排列：" << std::endl;
+    std::cout << "46:全排列：[1,2,3]" << std::endl;
     vector<int> array = {1, 2, 3};
     vector<vector<int> > reslut = permute(array);
     for(auto i : reslut) {
