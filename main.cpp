@@ -2,7 +2,7 @@
 #include "main.h"
 #include <iostream>
 #include <vector>
-#include "a_45/a.h"
+#include "bianry_tree/a.h"
 
 void say_hello(){
     std::cout << "Hello, from algo!\n";
@@ -16,6 +16,6 @@ int main(int argc, char const *argv[])
     test_47();
     // test_46();
 
-    test45();
+    printTree();
     return 0;
 }
