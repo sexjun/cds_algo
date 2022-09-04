@@ -2,6 +2,7 @@ log/**
 third_party/**
 build/**
 .vscode/**
+!.vscode/tasks.json
 # Prerequisites
 *.d
 
