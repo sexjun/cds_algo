@@ -1,3 +1,4 @@
+log/**
 third_party/**
 build/**
 .vscode/**

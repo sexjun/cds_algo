@@ -15,9 +15,15 @@ TEST(HelloTest, BasicAssertions) {
   EXPECT_EQ(7 * 6, 42);
 }
 
-int init_goole_test() {
+static int init_goole_test() {
     testing::InitGoogleTest();
     return RUN_ALL_TESTS();
+}
+
+static void init_glog(char const *argv[]) {
+    google::InitGoogleLogging(argv[0]);
+    FLAGS_log_dir = "/Users/chendongsheng/github/algo/log/";
+    return;
 }
 
 
@@ -28,11 +34,10 @@ void say_hello(){
 
 int main(int argc, char const *argv[])
 {
-    google::InitGoogleLogging(argv[0]);
+
+    init_goole_test();
+    init_glog(argv);
     LOG(ERROR) << "Found " << 2 << " cookies";
-    LOG(ERROR) << "Found " << 2 << " cookies";
-    LOG(ERROR) << "Found " << 2 << " cookies";
-    // init_goole_test();
     // say_hello();
 
     // // 123全排列问题
