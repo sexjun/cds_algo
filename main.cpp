@@ -3,9 +3,9 @@
 #include <iostream>
 #include <vector>
 #include <gtest/gtest.h>
+#include <glog/logging.h>
 
 #include "bianry_tree/a.h"
-
 
 // Demonstrate some basic assertions.
 TEST(HelloTest, BasicAssertions) {
@@ -28,14 +28,18 @@ void say_hello(){
 
 int main(int argc, char const *argv[])
 {
-    init_goole_test();
-    say_hello();
+    google::InitGoogleLogging(argv[0]);
+    LOG(ERROR) << "Found " << 2 << " cookies";
+    LOG(ERROR) << "Found " << 2 << " cookies";
+    LOG(ERROR) << "Found " << 2 << " cookies";
+    // init_goole_test();
+    // say_hello();
 
-    // 123全排列问题
-    test_46();
-    test_47();
+    // // 123全排列问题
     // test_46();
+    // test_47();
+    // // test_46();
 
-    printTree();
+    // printTree();
     return 0;
 }
